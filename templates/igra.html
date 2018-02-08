@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %} Igra {%endblock%}
+
+{%block vsebina %}
+    <div class="igra">
+        <p>Tukaj lahko igraš igro ugani glavno mesto.</p><br>
+        <p>V izboru so vse Evropske države.</p>
+        <br><br>
+
+        <p>Glavno mesto {{ drzava }}</p>
+        <form method="post", action="/igra">
+
+            <input name="glavno_mesto" type="text", style="input" placeholder="glavno mesto">
+
+            <button type="submit">Odgovori!</button>
+        </form>
+    </div>
+
+
+{%endblock %}

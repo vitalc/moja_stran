@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Kontakt {%endblock%}
+
+{%block vsebina %}
+    <div class="input" text-align="center">
+        <h3>Če želite, da vas kontaktiram, mi pošljite vaše podatke.<br> Želim vam lep dan!</h3>
+
+        <form method="post" action="/kontakt">
+            <input name="ime_in_priimek" style="input" placeholder="Ime in Priimek" align="center" ><br><br>
+            <input name="email" style="input" placeholder="E-mail"><br><br>
+            <textarea name="opis" style="input" placeholder="kratek opis projekta" ></textarea><br>
+
+            <button type="submit">Pošlji!</button>
+        </form>
+    </div>
+
+{%endblock %}
